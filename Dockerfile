@@ -1,6 +1,7 @@
 FROM debian:bullseye
 RUN apt update && \
 	apt install -y \
+	tzdata \
 	tini \
 	radicale \
 	python3-passlib \
