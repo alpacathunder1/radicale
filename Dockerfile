@@ -2,7 +2,8 @@ FROM debian:bookworm-slim
 RUN apt update && \
 	apt install -y \
 	tzdata \
-	tini \
+	tini
+RUN apt install -y \
 	radicale \
 	python3-passlib \
 	python3-bcrypt
